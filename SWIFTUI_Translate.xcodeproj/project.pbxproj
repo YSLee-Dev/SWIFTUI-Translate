@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		343E09DF2A1B7CCC009D210B /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343E09DE2A1B7CCC009D210B /* ResultView.swift */; };
+		343E09E12A1B7FE3009D210B /* InsertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343E09E02A1B7FE2009D210B /* InsertView.swift */; };
 		349D7FF82A1B75EE00E9C6E1 /* SWIFTUI_TranslateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D7FF72A1B75EE00E9C6E1 /* SWIFTUI_TranslateApp.swift */; };
 		349D7FFA2A1B75EE00E9C6E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D7FF92A1B75EE00E9C6E1 /* ContentView.swift */; };
 		349D7FFC2A1B75F200E9C6E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349D7FFB2A1B75F200E9C6E1 /* Assets.xcassets */; };
 		349D7FFF2A1B75F200E9C6E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349D7FFE2A1B75F200E9C6E1 /* Preview Assets.xcassets */; };
+		349D800C2A1B78EF00E9C6E1 /* TranslateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D800B2A1B78EF00E9C6E1 /* TranslateView.swift */; };
+		349D800E2A1B798700E9C6E1 /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D800D2A1B798700E9C6E1 /* LanguageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		343E09DE2A1B7CCC009D210B /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		343E09E02A1B7FE2009D210B /* InsertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertView.swift; sourceTree = "<group>"; };
 		349D7FF42A1B75EE00E9C6E1 /* SWIFTUI_Translate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWIFTUI_Translate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		349D7FF72A1B75EE00E9C6E1 /* SWIFTUI_TranslateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWIFTUI_TranslateApp.swift; sourceTree = "<group>"; };
 		349D7FF92A1B75EE00E9C6E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		349D7FFB2A1B75F200E9C6E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		349D7FFE2A1B75F200E9C6E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		349D800B2A1B78EF00E9C6E1 /* TranslateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateView.swift; sourceTree = "<group>"; };
+		349D800D2A1B798700E9C6E1 /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +59,9 @@
 		349D7FF62A1B75EE00E9C6E1 /* SWIFTUI_Translate */ = {
 			isa = PBXGroup;
 			children = (
-				349D7FF72A1B75EE00E9C6E1 /* SWIFTUI_TranslateApp.swift */,
-				349D7FF92A1B75EE00E9C6E1 /* ContentView.swift */,
-				349D7FFB2A1B75F200E9C6E1 /* Assets.xcassets */,
-				349D7FFD2A1B75F200E9C6E1 /* Preview Content */,
+				349D80092A1B78B300E9C6E1 /* Application */,
+				349D80072A1B789400E9C6E1 /* Presentation */,
+				349D800A2A1B78CB00E9C6E1 /* Resource */,
 			);
 			path = SWIFTUI_Translate;
 			sourceTree = "<group>";
@@ -65,6 +72,51 @@
 				349D7FFE2A1B75F200E9C6E1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		349D80072A1B789400E9C6E1 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				349D80082A1B78AB00E9C6E1 /* Translate */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		349D80082A1B78AB00E9C6E1 /* Translate */ = {
+			isa = PBXGroup;
+			children = (
+				349D800B2A1B78EF00E9C6E1 /* TranslateView.swift */,
+				349D800F2A1B798B00E9C6E1 /* Sub */,
+			);
+			path = Translate;
+			sourceTree = "<group>";
+		};
+		349D80092A1B78B300E9C6E1 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				349D7FF72A1B75EE00E9C6E1 /* SWIFTUI_TranslateApp.swift */,
+				349D7FF92A1B75EE00E9C6E1 /* ContentView.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		349D800A2A1B78CB00E9C6E1 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				349D7FFD2A1B75F200E9C6E1 /* Preview Content */,
+				349D7FFB2A1B75F200E9C6E1 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		349D800F2A1B798B00E9C6E1 /* Sub */ = {
+			isa = PBXGroup;
+			children = (
+				349D800D2A1B798700E9C6E1 /* LanguageView.swift */,
+				343E09DE2A1B7CCC009D210B /* ResultView.swift */,
+				343E09E02A1B7FE2009D210B /* InsertView.swift */,
+			);
+			path = Sub;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +189,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				349D800E2A1B798700E9C6E1 /* LanguageView.swift in Sources */,
+				343E09E12A1B7FE3009D210B /* InsertView.swift in Sources */,
 				349D7FFA2A1B75EE00E9C6E1 /* ContentView.swift in Sources */,
+				343E09DF2A1B7CCC009D210B /* ResultView.swift in Sources */,
+				349D800C2A1B78EF00E9C6E1 /* TranslateView.swift in Sources */,
 				349D7FF82A1B75EE00E9C6E1 /* SWIFTUI_TranslateApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +322,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SWIFTUI_Translate/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SWIFTUI_Translate/Resource/Preview Content\"";
 				DEVELOPMENT_TEAM = 6V8879W55Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -295,7 +351,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SWIFTUI_Translate/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SWIFTUI_Translate/Resource/Preview Content\"";
 				DEVELOPMENT_TEAM = 6V8879W55Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
