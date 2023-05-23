@@ -8,30 +8,51 @@
 import SwiftUI
 
 struct LanguageView: View {
+    @State private var sourceAlertShow = false
+    @State private var targetAlertShow = false
+    
+    @State private var sourceLanguage = Language.ko
+    @State private var targetLanguage = Language.en
+    
     var body: some View {
         HStack(alignment: .center){
             
             Button {
-                print("BUTTON TAP")
+                self.sourceAlertShow = true
             } label: {
-                Text("한국어")
+                Text(self.sourceLanguage.title)
                     .foregroundColor(Color(uiColor: UIColor.label))
                     .padding(.vertical, 10)
                     .frame(maxWidth: .infinity)
                     .background(Color(uiColor: UIColor.systemBackground))
                     .cornerRadius(10)
             }
-            
+            .confirmationDialog("Language" ,isPresented: $sourceAlertShow){
+                ForEach(Language.allCases, id: \.self){ la in
+                    Button(la.title){
+                        self.sourceLanguage = la
+                    }
+                }
+
+            }
             
             Button {
-                print("BUTTON TAP")
+                self.targetAlertShow = true
             } label: {
-                Text("영어")
+                Text(self.targetLanguage.title)
                     .foregroundColor(Color(uiColor: UIColor.label))
                     .padding(.vertical, 10)
                     .frame(maxWidth: .infinity)
                     .background(Color(uiColor: UIColor.systemBackground))
                     .cornerRadius(10)
+            }
+            .confirmationDialog("Language" ,isPresented: $targetAlertShow){
+                ForEach(Language.allCases, id: \.self){ la in
+                    Button(la.title){
+                        self.targetLanguage = la
+                    }
+                }
+
             }
         }
         .padding(.vertical, 10)

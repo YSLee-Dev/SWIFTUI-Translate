@@ -25,11 +25,13 @@ struct InsertView: View {
             if self.tfValue == ""{
                 VStack{
                     Text("번역하고 싶은 문구를 입력하세요.")
+                        .font(.title2)
+                        .fontWeight(.semibold)
                         .foregroundColor(.gray)
-                        .padding(20)
                         .frame(maxWidth: .infinity,
                                alignment: .leading
                         )
+                        .padding(EdgeInsets(top: 30, leading: 25, bottom: 0, trailing: 0))
                     Spacer()
                 }
             }
