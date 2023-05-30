@@ -8,12 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    let translateViewModel = TranslasteViewModel()
     var body: some View {
         TabView{
-            TranslateView()
+            TranslateView(viewModel: translateViewModel)
                 .tabItem{
                     Image(systemName: "mic")
                     Text("번역")
+                }
+                .onAppear{
+                    translateViewModel.bind()
                 }
             Text("북마크")
                 .tabItem{

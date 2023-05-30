@@ -6,18 +6,24 @@
 //
 
 import SwiftUI
+import Combine
 
 struct InsertView: View {
-    @State private var tfValue = ""
+    @State private var tfValue : String = ""
+    let viewModel : InsertViewModel
+    
     var body: some View {
         VStack(alignment: .leading){
-            TextEditor(text: $tfValue)
+            TextEditor(text: self.$tfValue)
                 .font(.title2)
                 .fontWeight(.semibold)
                 .lineLimit(0)
                 .frame(maxWidth: .infinity,
                        alignment: .leading)
                 .padding(20)
+                .onReceive(Just(self.tfValue)){ data in
+                    self.viewModel.value.send(data)
+                }
         }
         .background(Color(uiColor: UIColor.systemBackground))
         .cornerRadius(10)
@@ -36,11 +42,5 @@ struct InsertView: View {
                 }
             }
         }
-    }
-}
-
-struct InsertView_Previews: PreviewProvider {
-    static var previews: some View {
-        InsertView()
     }
 }

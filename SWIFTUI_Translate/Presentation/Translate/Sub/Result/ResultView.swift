@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct ResultView: View {
+    @ObservedObject var viewModel : ResultViewModel
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 5){
-            Text("번역결과\n번역결과\n번역결과")
+            Text(viewModel.resultText)
                 .font(.title2)
                 .fontWeight(.semibold)
                 .frame(maxWidth: .infinity,
@@ -39,11 +41,5 @@ struct ResultView: View {
         }
         .background(Color(uiColor: UIColor.systemBackground))
         .cornerRadius(10)
-    }
-}
-
-struct ResultView_Previews: PreviewProvider {
-    static var previews: some View {
-        ResultView()
     }
 }

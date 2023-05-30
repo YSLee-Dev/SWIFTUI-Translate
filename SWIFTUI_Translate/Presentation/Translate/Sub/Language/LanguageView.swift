@@ -14,6 +14,8 @@ struct LanguageView: View {
     @State private var sourceLanguage = Language.ko
     @State private var targetLanguage = Language.en
     
+    let viewModel : LanguageViewModel
+    
     var body: some View {
         HStack(alignment: .center){
             
@@ -31,6 +33,7 @@ struct LanguageView: View {
                 ForEach(Language.allCases, id: \.self){ la in
                     Button(la.title){
                         self.sourceLanguage = la
+                        self.viewModel.sourceLanguage.send(la)
                     }
                 }
 
@@ -50,6 +53,7 @@ struct LanguageView: View {
                 ForEach(Language.allCases, id: \.self){ la in
                     Button(la.title){
                         self.targetLanguage = la
+                        self.viewModel.targetLanguage.send(la)
                     }
                 }
 
@@ -57,11 +61,5 @@ struct LanguageView: View {
         }
         .padding(.vertical, 10)
         .background(Color(uiColor: UIColor.secondarySystemBackground))
-    }
-}
-
-struct LanguageView_Previews: PreviewProvider {
-    static var previews: some View {
-        LanguageView()
     }
 }
