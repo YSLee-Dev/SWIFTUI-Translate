@@ -11,6 +11,14 @@
 		34342B372A26082B001EB2C3 /* InsertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34342B362A26082B001EB2C3 /* InsertViewModel.swift */; };
 		34342B392A260B52001EB2C3 /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34342B382A260B52001EB2C3 /* ResultViewModel.swift */; };
 		34342B3B2A260C00001EB2C3 /* LanguageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34342B3A2A260C00001EB2C3 /* LanguageViewModel.swift */; };
+		34342B402A27524B001EB2C3 /* BookmarkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34342B3F2A27524A001EB2C3 /* BookmarkData.swift */; };
+		34342B462A2759ED001EB2C3 /* BookmarkSaveRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34342B452A2759ED001EB2C3 /* BookmarkSaveRepositoryProtocol.swift */; };
+		34342B482A275B06001EB2C3 /* BookmarkSaveUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34342B472A275B06001EB2C3 /* BookmarkSaveUsecase.swift */; };
+		34342B4F2A275B82001EB2C3 /* BookmarkReadDeleteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34342B4E2A275B82001EB2C3 /* BookmarkReadDeleteRepository.swift */; };
+		34342B532A275BC3001EB2C3 /* UserDefaults+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34342B522A275BC3001EB2C3 /* UserDefaults+.swift */; };
+		34342B582A27606F001EB2C3 /* BookmarkSaveUsecaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34342B572A27606F001EB2C3 /* BookmarkSaveUsecaseProtocol.swift */; };
+		34342B5A2A2762EA001EB2C3 /* BookmarkReadDeleteRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34342B592A2762EA001EB2C3 /* BookmarkReadDeleteRepositoryProtocol.swift */; };
+		34342B5C2A27635C001EB2C3 /* BookmarkSaveRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34342B5B2A27635C001EB2C3 /* BookmarkSaveRepository.swift */; };
 		343E09DF2A1B7CCC009D210B /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343E09DE2A1B7CCC009D210B /* ResultView.swift */; };
 		343E09E12A1B7FE3009D210B /* InsertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343E09E02A1B7FE2009D210B /* InsertView.swift */; };
 		348746E92A1CD6EA008C2E05 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348746E82A1CD6EA008C2E05 /* Language.swift */; };
@@ -27,6 +35,14 @@
 		34342B362A26082B001EB2C3 /* InsertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertViewModel.swift; sourceTree = "<group>"; };
 		34342B382A260B52001EB2C3 /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
 		34342B3A2A260C00001EB2C3 /* LanguageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewModel.swift; sourceTree = "<group>"; };
+		34342B3F2A27524A001EB2C3 /* BookmarkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkData.swift; sourceTree = "<group>"; };
+		34342B452A2759ED001EB2C3 /* BookmarkSaveRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkSaveRepositoryProtocol.swift; sourceTree = "<group>"; };
+		34342B472A275B06001EB2C3 /* BookmarkSaveUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkSaveUsecase.swift; sourceTree = "<group>"; };
+		34342B4E2A275B82001EB2C3 /* BookmarkReadDeleteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkReadDeleteRepository.swift; sourceTree = "<group>"; };
+		34342B522A275BC3001EB2C3 /* UserDefaults+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+.swift"; sourceTree = "<group>"; };
+		34342B572A27606F001EB2C3 /* BookmarkSaveUsecaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkSaveUsecaseProtocol.swift; sourceTree = "<group>"; };
+		34342B592A2762EA001EB2C3 /* BookmarkReadDeleteRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkReadDeleteRepositoryProtocol.swift; sourceTree = "<group>"; };
+		34342B5B2A27635C001EB2C3 /* BookmarkSaveRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkSaveRepository.swift; sourceTree = "<group>"; };
 		343E09DE2A1B7CCC009D210B /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		343E09E02A1B7FE2009D210B /* InsertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertView.swift; sourceTree = "<group>"; };
 		348746E82A1CD6EA008C2E05 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
@@ -50,14 +66,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		34342B2E2A25F579001EB2C3 /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-				348746E82A1CD6EA008C2E05 /* Language.swift */,
-			);
-			path = Entity;
-			sourceTree = "<group>";
-		};
 		34342B3C2A2612A4001EB2C3 /* Language */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +93,108 @@
 			path = Result;
 			sourceTree = "<group>";
 		};
+		34342B412A275251001EB2C3 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				34342B442A275989001EB2C3 /* RepositoryProtocol */,
+				34342B432A275980001EB2C3 /* Usecase */,
+				34342B422A27525B001EB2C3 /* Entity */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		34342B422A27525B001EB2C3 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				348746E82A1CD6EA008C2E05 /* Language.swift */,
+				34342B3F2A27524A001EB2C3 /* BookmarkData.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		34342B432A275980001EB2C3 /* Usecase */ = {
+			isa = PBXGroup;
+			children = (
+				34342B4C2A275B5F001EB2C3 /* BookmarkSave */,
+			);
+			path = Usecase;
+			sourceTree = "<group>";
+		};
+		34342B442A275989001EB2C3 /* RepositoryProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				34342B4B2A275B55001EB2C3 /* BookmarkSave */,
+			);
+			path = RepositoryProtocol;
+			sourceTree = "<group>";
+		};
+		34342B492A275B3E001EB2C3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				34342B4D2A275B6B001EB2C3 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		34342B4A2A275B43001EB2C3 /* BookmarkSave */ = {
+			isa = PBXGroup;
+			children = (
+				34342B4E2A275B82001EB2C3 /* BookmarkReadDeleteRepository.swift */,
+				34342B5B2A27635C001EB2C3 /* BookmarkSaveRepository.swift */,
+			);
+			path = BookmarkSave;
+			sourceTree = "<group>";
+		};
+		34342B4B2A275B55001EB2C3 /* BookmarkSave */ = {
+			isa = PBXGroup;
+			children = (
+				34342B452A2759ED001EB2C3 /* BookmarkSaveRepositoryProtocol.swift */,
+				34342B592A2762EA001EB2C3 /* BookmarkReadDeleteRepositoryProtocol.swift */,
+			);
+			path = BookmarkSave;
+			sourceTree = "<group>";
+		};
+		34342B4C2A275B5F001EB2C3 /* BookmarkSave */ = {
+			isa = PBXGroup;
+			children = (
+				34342B562A27605D001EB2C3 /* Protocol */,
+				34342B472A275B06001EB2C3 /* BookmarkSaveUsecase.swift */,
+			);
+			path = BookmarkSave;
+			sourceTree = "<group>";
+		};
+		34342B4D2A275B6B001EB2C3 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				34342B4A2A275B43001EB2C3 /* BookmarkSave */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		34342B502A275BA9001EB2C3 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				34342B512A275BB1001EB2C3 /* Extension */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		34342B512A275BB1001EB2C3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				34342B522A275BC3001EB2C3 /* UserDefaults+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		34342B562A27605D001EB2C3 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				34342B572A27606F001EB2C3 /* BookmarkSaveUsecaseProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		349D7FEB2A1B75EE00E9C6E1 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +214,9 @@
 		349D7FF62A1B75EE00E9C6E1 /* SWIFTUI_Translate */ = {
 			isa = PBXGroup;
 			children = (
+				34342B502A275BA9001EB2C3 /* Util */,
+				34342B492A275B3E001EB2C3 /* Data */,
+				34342B412A275251001EB2C3 /* Domain */,
 				349D80092A1B78B300E9C6E1 /* Application */,
 				349D80072A1B789400E9C6E1 /* Presentation */,
 				349D800A2A1B78CB00E9C6E1 /* Resource */,
@@ -132,7 +245,6 @@
 			children = (
 				349D800B2A1B78EF00E9C6E1 /* TranslateView.swift */,
 				34342B2F2A25FA84001EB2C3 /* TranslasteViewModel.swift */,
-				34342B2E2A25F579001EB2C3 /* Entity */,
 				349D800F2A1B798B00E9C6E1 /* Sub */,
 			);
 			path = Translate;
@@ -236,11 +348,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34342B532A275BC3001EB2C3 /* UserDefaults+.swift in Sources */,
 				349D800E2A1B798700E9C6E1 /* LanguageView.swift in Sources */,
+				34342B462A2759ED001EB2C3 /* BookmarkSaveRepositoryProtocol.swift in Sources */,
 				34342B392A260B52001EB2C3 /* ResultViewModel.swift in Sources */,
+				34342B582A27606F001EB2C3 /* BookmarkSaveUsecaseProtocol.swift in Sources */,
 				34342B302A25FA84001EB2C3 /* TranslasteViewModel.swift in Sources */,
 				34342B3B2A260C00001EB2C3 /* LanguageViewModel.swift in Sources */,
 				343E09E12A1B7FE3009D210B /* InsertView.swift in Sources */,
+				34342B5A2A2762EA001EB2C3 /* BookmarkReadDeleteRepositoryProtocol.swift in Sources */,
+				34342B4F2A275B82001EB2C3 /* BookmarkReadDeleteRepository.swift in Sources */,
+				34342B5C2A27635C001EB2C3 /* BookmarkSaveRepository.swift in Sources */,
+				34342B482A275B06001EB2C3 /* BookmarkSaveUsecase.swift in Sources */,
+				34342B402A27524B001EB2C3 /* BookmarkData.swift in Sources */,
 				349D7FFA2A1B75EE00E9C6E1 /* ContentView.swift in Sources */,
 				348746E92A1CD6EA008C2E05 /* Language.swift in Sources */,
 				343E09DF2A1B7CCC009D210B /* ResultView.swift in Sources */,

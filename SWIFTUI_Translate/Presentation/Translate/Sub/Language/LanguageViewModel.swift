@@ -10,6 +10,6 @@ import Foundation
 import Combine
 
 class LanguageViewModel{
-    let sourceLanguage = PassthroughSubject<Language, Never>()
-    let targetLanguage = PassthroughSubject<Language, Never>()
+    let sourceLanguage = CurrentValueSubject<Language, Never>(.ko)
+    let targetLanguage = CurrentValueSubject<Language, Never>(.en)
 }
