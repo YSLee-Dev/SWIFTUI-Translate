@@ -9,5 +9,5 @@ import SwiftUI
 import Combine
 
 class InsertViewModel{
-    let value = PassthroughSubject<String, Never>()
+    let value = CurrentValueSubject<String, Never>("")
 }

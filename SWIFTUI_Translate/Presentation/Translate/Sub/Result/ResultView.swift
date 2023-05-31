@@ -22,9 +22,10 @@ struct ResultView: View {
             
             HStack{
                 Button {
+                    self.viewModel.bookmarkBtnTap.send(Void())
                     print("스크랩")
                 } label: {
-                    Image(systemName: "bookmark")
+                    Image(systemName: self.viewModel.bookmarkImg)
                     
                 }
                
