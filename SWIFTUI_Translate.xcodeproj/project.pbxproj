@@ -28,6 +28,9 @@
 		349D7FFF2A1B75F200E9C6E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349D7FFE2A1B75F200E9C6E1 /* Preview Assets.xcassets */; };
 		349D800C2A1B78EF00E9C6E1 /* TranslateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D800B2A1B78EF00E9C6E1 /* TranslateView.swift */; };
 		349D800E2A1B798700E9C6E1 /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D800D2A1B798700E9C6E1 /* LanguageView.swift */; };
+		34A4DE3D2A289AB6008976DA /* BookmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A4DE3C2A289AB6008976DA /* BookmarkView.swift */; };
+		34A4DE3F2A289C2D008976DA /* BookmarkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A4DE3E2A289C2D008976DA /* BookmarkCell.swift */; };
+		34A4DE422A28ABE3008976DA /* BookmarkReadDeleteUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A4DE412A28ABE3008976DA /* BookmarkReadDeleteUsecase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +56,9 @@
 		349D7FFE2A1B75F200E9C6E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		349D800B2A1B78EF00E9C6E1 /* TranslateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateView.swift; sourceTree = "<group>"; };
 		349D800D2A1B798700E9C6E1 /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
+		34A4DE3C2A289AB6008976DA /* BookmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkView.swift; sourceTree = "<group>"; };
+		34A4DE3E2A289C2D008976DA /* BookmarkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkCell.swift; sourceTree = "<group>"; };
+		34A4DE412A28ABE3008976DA /* BookmarkReadDeleteUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkReadDeleteUsecase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +165,7 @@
 			children = (
 				34342B562A27605D001EB2C3 /* Protocol */,
 				34342B472A275B06001EB2C3 /* BookmarkSaveUsecase.swift */,
+				34A4DE412A28ABE3008976DA /* BookmarkReadDeleteUsecase.swift */,
 			);
 			path = BookmarkSave;
 			sourceTree = "<group>";
@@ -235,6 +242,7 @@
 		349D80072A1B789400E9C6E1 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				34A4DE3B2A289AA4008976DA /* Bookmark */,
 				349D80082A1B78AB00E9C6E1 /* Translate */,
 			);
 			path = Presentation;
@@ -274,6 +282,23 @@
 				34342B3C2A2612A4001EB2C3 /* Language */,
 				34342B3D2A2612AD001EB2C3 /* Insert */,
 				34342B3E2A2612B4001EB2C3 /* Result */,
+			);
+			path = Sub;
+			sourceTree = "<group>";
+		};
+		34A4DE3B2A289AA4008976DA /* Bookmark */ = {
+			isa = PBXGroup;
+			children = (
+				34A4DE3C2A289AB6008976DA /* BookmarkView.swift */,
+				34A4DE402A289C31008976DA /* Sub */,
+			);
+			path = Bookmark;
+			sourceTree = "<group>";
+		};
+		34A4DE402A289C31008976DA /* Sub */ = {
+			isa = PBXGroup;
+			children = (
+				34A4DE3E2A289C2D008976DA /* BookmarkCell.swift */,
 			);
 			path = Sub;
 			sourceTree = "<group>";
@@ -354,7 +379,9 @@
 				34342B392A260B52001EB2C3 /* ResultViewModel.swift in Sources */,
 				34342B582A27606F001EB2C3 /* BookmarkSaveUsecaseProtocol.swift in Sources */,
 				34342B302A25FA84001EB2C3 /* TranslasteViewModel.swift in Sources */,
+				34A4DE3D2A289AB6008976DA /* BookmarkView.swift in Sources */,
 				34342B3B2A260C00001EB2C3 /* LanguageViewModel.swift in Sources */,
+				34A4DE3F2A289C2D008976DA /* BookmarkCell.swift in Sources */,
 				343E09E12A1B7FE3009D210B /* InsertView.swift in Sources */,
 				34342B5A2A2762EA001EB2C3 /* BookmarkReadDeleteRepositoryProtocol.swift in Sources */,
 				34342B4F2A275B82001EB2C3 /* BookmarkReadDeleteRepository.swift in Sources */,
@@ -362,6 +389,7 @@
 				34342B482A275B06001EB2C3 /* BookmarkSaveUsecase.swift in Sources */,
 				34342B402A27524B001EB2C3 /* BookmarkData.swift in Sources */,
 				349D7FFA2A1B75EE00E9C6E1 /* ContentView.swift in Sources */,
+				34A4DE422A28ABE3008976DA /* BookmarkReadDeleteUsecase.swift in Sources */,
 				348746E92A1CD6EA008C2E05 /* Language.swift in Sources */,
 				343E09DF2A1B7CCC009D210B /* ResultView.swift in Sources */,
 				349D800C2A1B78EF00E9C6E1 /* TranslateView.swift in Sources */,

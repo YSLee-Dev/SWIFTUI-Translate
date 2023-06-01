@@ -19,7 +19,7 @@ struct ContentView: View {
                 .onAppear{
                     translateViewModel.bind()
                 }
-            Text("북마크")
+            BookmarkView()
                 .tabItem{
                     Image(systemName: "star")
                     Text("즐겨찾기")

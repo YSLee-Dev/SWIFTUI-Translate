@@ -14,6 +14,7 @@ struct ResultView: View {
         VStack(alignment: .leading, spacing: 5){
             Text(viewModel.resultText)
                 .font(.title2)
+                .foregroundColor(.pink)
                 .fontWeight(.semibold)
                 .frame(maxWidth: .infinity,
                        alignment: .leading)
