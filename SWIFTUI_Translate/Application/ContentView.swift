@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    let translateViewModel = TranslasteViewModel()
+    let translateViewModel : TranslasteViewModel
+    let bookmarkViewModel : BookmarkViewModel
+    
     var body: some View {
         TabView{
             TranslateView(viewModel: translateViewModel)
@@ -16,10 +18,8 @@ struct ContentView: View {
                     Image(systemName: "mic")
                     Text("번역")
                 }
-                .onAppear{
-                    translateViewModel.bind()
-                }
-            BookmarkView()
+            
+            BookmarkView(viewModel: bookmarkViewModel)
                 .tabItem{
                     Image(systemName: "star")
                     Text("즐겨찾기")
@@ -31,6 +31,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(translateViewModel: .init(), bookmarkViewModel: .init())
     }
 }

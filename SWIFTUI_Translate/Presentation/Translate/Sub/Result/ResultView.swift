@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ResultView: View {
-    @ObservedObject var viewModel : ResultViewModel
+    @StateObject var viewModel : ResultViewModel
     
     var body: some View {
         VStack(alignment: .leading, spacing: 5){

@@ -31,6 +31,8 @@
 		34A4DE3D2A289AB6008976DA /* BookmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A4DE3C2A289AB6008976DA /* BookmarkView.swift */; };
 		34A4DE3F2A289C2D008976DA /* BookmarkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A4DE3E2A289C2D008976DA /* BookmarkCell.swift */; };
 		34A4DE422A28ABE3008976DA /* BookmarkReadDeleteUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A4DE412A28ABE3008976DA /* BookmarkReadDeleteUsecase.swift */; };
+		34A4DE442A28AC26008976DA /* BookmarkReadDeleteUsecaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A4DE432A28AC26008976DA /* BookmarkReadDeleteUsecaseProtocol.swift */; };
+		34A4DE462A28AE33008976DA /* BookmarkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A4DE452A28AE33008976DA /* BookmarkViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,8 @@
 		34A4DE3C2A289AB6008976DA /* BookmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkView.swift; sourceTree = "<group>"; };
 		34A4DE3E2A289C2D008976DA /* BookmarkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkCell.swift; sourceTree = "<group>"; };
 		34A4DE412A28ABE3008976DA /* BookmarkReadDeleteUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkReadDeleteUsecase.swift; sourceTree = "<group>"; };
+		34A4DE432A28AC26008976DA /* BookmarkReadDeleteUsecaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkReadDeleteUsecaseProtocol.swift; sourceTree = "<group>"; };
+		34A4DE452A28AE33008976DA /* BookmarkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				34342B572A27606F001EB2C3 /* BookmarkSaveUsecaseProtocol.swift */,
+				34A4DE432A28AC26008976DA /* BookmarkReadDeleteUsecaseProtocol.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -290,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				34A4DE3C2A289AB6008976DA /* BookmarkView.swift */,
+				34A4DE452A28AE33008976DA /* BookmarkViewModel.swift */,
 				34A4DE402A289C31008976DA /* Sub */,
 			);
 			path = Bookmark;
@@ -385,9 +391,11 @@
 				343E09E12A1B7FE3009D210B /* InsertView.swift in Sources */,
 				34342B5A2A2762EA001EB2C3 /* BookmarkReadDeleteRepositoryProtocol.swift in Sources */,
 				34342B4F2A275B82001EB2C3 /* BookmarkReadDeleteRepository.swift in Sources */,
+				34A4DE462A28AE33008976DA /* BookmarkViewModel.swift in Sources */,
 				34342B5C2A27635C001EB2C3 /* BookmarkSaveRepository.swift in Sources */,
 				34342B482A275B06001EB2C3 /* BookmarkSaveUsecase.swift in Sources */,
 				34342B402A27524B001EB2C3 /* BookmarkData.swift in Sources */,
+				34A4DE442A28AC26008976DA /* BookmarkReadDeleteUsecaseProtocol.swift in Sources */,
 				349D7FFA2A1B75EE00E9C6E1 /* ContentView.swift in Sources */,
 				34A4DE422A28ABE3008976DA /* BookmarkReadDeleteUsecase.swift in Sources */,
 				348746E92A1CD6EA008C2E05 /* Language.swift in Sources */,

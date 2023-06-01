@@ -18,7 +18,6 @@ extension UserDefaults{
             return (try? PropertyListDecoder().decode([BookmarkData].self, from: data)) ?? []
         }
         set{
-            print(newValue)
             UserDefaults.standard.setValue(try? PropertyListEncoder().encode(newValue), forKey: UserDefaults.Key.bookmarks.rawValue)
         }
     }

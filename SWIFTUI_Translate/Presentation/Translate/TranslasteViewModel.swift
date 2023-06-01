@@ -41,6 +41,12 @@ class TranslasteViewModel : ObservableObject{
             .removeDuplicates()
         
         bookmarkTap
+            .sink{[weak self] _ in
+                self?.tapEventMove()
+            }
+            .store(in: &self.bag)
+        
+        bookmarkTap
             .map{ _ in
                 "bookmark.fill"
             }
@@ -60,5 +66,12 @@ class TranslasteViewModel : ObservableObject{
                                                   translatedText: self?.resultViewModel.resultText ?? "")
             }
             .store(in: &bag)
+        
+    }
+}
+
+extension TranslasteViewModel{
+    func tapEventMove(){
+        NotificationCenter.default.post(name: NSNotification.Name(UserDefaults.Key.bookmarks.rawValue), object: nil, userInfo: nil)
     }
 }
