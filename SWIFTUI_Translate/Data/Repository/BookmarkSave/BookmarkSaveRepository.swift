@@ -9,7 +9,7 @@ import Foundation
 
 class BookmarkSaveRepository : BookmarkSaveRepositoryProtocol{
     func bookmarkListAdd(value: BookmarkData) {
-        UserDefaults.standard.bookMarkList.append(value)
+        UserDefaults.standard.bookMarkList = [value] + UserDefaults.standard.bookMarkList
     }
 }
 

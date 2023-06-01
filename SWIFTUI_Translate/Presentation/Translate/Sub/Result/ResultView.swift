@@ -32,6 +32,7 @@ struct ResultView: View {
                 
                 Button {
                     print("복사")
+                    UIPasteboard.general.string = self.viewModel.resultText
                 } label: {
                     Image(systemName: "doc.on.doc")
                 }
