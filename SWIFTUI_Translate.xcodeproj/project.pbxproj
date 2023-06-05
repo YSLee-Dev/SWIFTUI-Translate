@@ -33,6 +33,15 @@
 		34A4DE422A28ABE3008976DA /* BookmarkReadDeleteUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A4DE412A28ABE3008976DA /* BookmarkReadDeleteUsecase.swift */; };
 		34A4DE442A28AC26008976DA /* BookmarkReadDeleteUsecaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A4DE432A28AC26008976DA /* BookmarkReadDeleteUsecaseProtocol.swift */; };
 		34A4DE462A28AE33008976DA /* BookmarkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A4DE452A28AE33008976DA /* BookmarkViewModel.swift */; };
+		34ADBF0F2A2DE55800388C49 /* TranslateRequestDataDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ADBF0E2A2DE55800388C49 /* TranslateRequestDataDTO.swift */; };
+		34ADBF122A2DE5D700388C49 /* TranslateResponseDataDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ADBF112A2DE5D700388C49 /* TranslateResponseDataDTO.swift */; };
+		34ADBF142A2DE76E00388C49 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ADBF132A2DE76E00388C49 /* NetworkServiceProtocol.swift */; };
+		34ADBF172A2DE84C00388C49 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ADBF162A2DE84C00388C49 /* NetworkService.swift */; };
+		34ADBF192A2DEF8400388C49 /* RequestToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ADBF182A2DEF8400388C49 /* RequestToken.swift */; };
+		34ADBF1B2A2DF02700388C49 /* TranslateRequestRepositortyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ADBF1A2A2DF02700388C49 /* TranslateRequestRepositortyProtocol.swift */; };
+		34ADBF1F2A2DF13D00388C49 /* TranslateRequestRepositorty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ADBF1E2A2DF13D00388C49 /* TranslateRequestRepositorty.swift */; };
+		34ADBF222A2DF71B00388C49 /* TranslateRequestUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ADBF212A2DF71B00388C49 /* TranslateRequestUsecase.swift */; };
+		34ADBF242A2DF89800388C49 /* TranslateRequestUsecaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ADBF232A2DF89800388C49 /* TranslateRequestUsecaseProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +72,15 @@
 		34A4DE412A28ABE3008976DA /* BookmarkReadDeleteUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkReadDeleteUsecase.swift; sourceTree = "<group>"; };
 		34A4DE432A28AC26008976DA /* BookmarkReadDeleteUsecaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkReadDeleteUsecaseProtocol.swift; sourceTree = "<group>"; };
 		34A4DE452A28AE33008976DA /* BookmarkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewModel.swift; sourceTree = "<group>"; };
+		34ADBF0E2A2DE55800388C49 /* TranslateRequestDataDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateRequestDataDTO.swift; sourceTree = "<group>"; };
+		34ADBF112A2DE5D700388C49 /* TranslateResponseDataDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateResponseDataDTO.swift; sourceTree = "<group>"; };
+		34ADBF132A2DE76E00388C49 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		34ADBF162A2DE84C00388C49 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		34ADBF182A2DEF8400388C49 /* RequestToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestToken.swift; sourceTree = "<group>"; };
+		34ADBF1A2A2DF02700388C49 /* TranslateRequestRepositortyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateRequestRepositortyProtocol.swift; sourceTree = "<group>"; };
+		34ADBF1E2A2DF13D00388C49 /* TranslateRequestRepositorty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateRequestRepositorty.swift; sourceTree = "<group>"; };
+		34ADBF212A2DF71B00388C49 /* TranslateRequestUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateRequestUsecase.swift; sourceTree = "<group>"; };
+		34ADBF232A2DF89800388C49 /* TranslateRequestUsecaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateRequestUsecaseProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +143,7 @@
 		34342B432A275980001EB2C3 /* Usecase */ = {
 			isa = PBXGroup;
 			children = (
+				34ADBF202A2DF70200388C49 /* Translate */,
 				34342B4C2A275B5F001EB2C3 /* BookmarkSave */,
 			);
 			path = Usecase;
@@ -133,6 +152,7 @@
 		34342B442A275989001EB2C3 /* RepositoryProtocol */ = {
 			isa = PBXGroup;
 			children = (
+				34ADBF1C2A2DF02E00388C49 /* Translate */,
 				34342B4B2A275B55001EB2C3 /* BookmarkSave */,
 			);
 			path = RepositoryProtocol;
@@ -141,6 +161,7 @@
 		34342B492A275B3E001EB2C3 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				34ADBF0C2A2DE3F500388C49 /* Network */,
 				34342B4D2A275B6B001EB2C3 /* Repository */,
 			);
 			path = Data;
@@ -177,6 +198,7 @@
 		34342B4D2A275B6B001EB2C3 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				34ADBF1D2A2DF12F00388C49 /* Translate */,
 				34342B4A2A275B43001EB2C3 /* BookmarkSave */,
 			);
 			path = Repository;
@@ -210,6 +232,7 @@
 		349D7FEB2A1B75EE00E9C6E1 = {
 			isa = PBXGroup;
 			children = (
+				34ADBF182A2DEF8400388C49 /* RequestToken.swift */,
 				349D7FF62A1B75EE00E9C6E1 /* SWIFTUI_Translate */,
 				349D7FF52A1B75EE00E9C6E1 /* Products */,
 			);
@@ -309,6 +332,66 @@
 			path = Sub;
 			sourceTree = "<group>";
 		};
+		34ADBF0C2A2DE3F500388C49 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				34ADBF162A2DE84C00388C49 /* NetworkService.swift */,
+				34ADBF152A2DE77500388C49 /* Protocol */,
+				34ADBF0D2A2DE54700388C49 /* DTO */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		34ADBF0D2A2DE54700388C49 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				34ADBF0E2A2DE55800388C49 /* TranslateRequestDataDTO.swift */,
+				34ADBF112A2DE5D700388C49 /* TranslateResponseDataDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		34ADBF152A2DE77500388C49 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				34ADBF132A2DE76E00388C49 /* NetworkServiceProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		34ADBF1C2A2DF02E00388C49 /* Translate */ = {
+			isa = PBXGroup;
+			children = (
+				34ADBF1A2A2DF02700388C49 /* TranslateRequestRepositortyProtocol.swift */,
+			);
+			path = Translate;
+			sourceTree = "<group>";
+		};
+		34ADBF1D2A2DF12F00388C49 /* Translate */ = {
+			isa = PBXGroup;
+			children = (
+				34ADBF1E2A2DF13D00388C49 /* TranslateRequestRepositorty.swift */,
+			);
+			path = Translate;
+			sourceTree = "<group>";
+		};
+		34ADBF202A2DF70200388C49 /* Translate */ = {
+			isa = PBXGroup;
+			children = (
+				34ADBF212A2DF71B00388C49 /* TranslateRequestUsecase.swift */,
+				34ADBF252A2DF89B00388C49 /* Protocol */,
+			);
+			path = Translate;
+			sourceTree = "<group>";
+		};
+		34ADBF252A2DF89B00388C49 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				34ADBF232A2DF89800388C49 /* TranslateRequestUsecaseProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -385,22 +468,31 @@
 				34342B392A260B52001EB2C3 /* ResultViewModel.swift in Sources */,
 				34342B582A27606F001EB2C3 /* BookmarkSaveUsecaseProtocol.swift in Sources */,
 				34342B302A25FA84001EB2C3 /* TranslasteViewModel.swift in Sources */,
+				34ADBF172A2DE84C00388C49 /* NetworkService.swift in Sources */,
 				34A4DE3D2A289AB6008976DA /* BookmarkView.swift in Sources */,
 				34342B3B2A260C00001EB2C3 /* LanguageViewModel.swift in Sources */,
 				34A4DE3F2A289C2D008976DA /* BookmarkCell.swift in Sources */,
 				343E09E12A1B7FE3009D210B /* InsertView.swift in Sources */,
 				34342B5A2A2762EA001EB2C3 /* BookmarkReadDeleteRepositoryProtocol.swift in Sources */,
+				34ADBF142A2DE76E00388C49 /* NetworkServiceProtocol.swift in Sources */,
 				34342B4F2A275B82001EB2C3 /* BookmarkReadDeleteRepository.swift in Sources */,
 				34A4DE462A28AE33008976DA /* BookmarkViewModel.swift in Sources */,
+				34ADBF1F2A2DF13D00388C49 /* TranslateRequestRepositorty.swift in Sources */,
 				34342B5C2A27635C001EB2C3 /* BookmarkSaveRepository.swift in Sources */,
 				34342B482A275B06001EB2C3 /* BookmarkSaveUsecase.swift in Sources */,
+				34ADBF242A2DF89800388C49 /* TranslateRequestUsecaseProtocol.swift in Sources */,
 				34342B402A27524B001EB2C3 /* BookmarkData.swift in Sources */,
 				34A4DE442A28AC26008976DA /* BookmarkReadDeleteUsecaseProtocol.swift in Sources */,
 				349D7FFA2A1B75EE00E9C6E1 /* ContentView.swift in Sources */,
 				34A4DE422A28ABE3008976DA /* BookmarkReadDeleteUsecase.swift in Sources */,
+				34ADBF192A2DEF8400388C49 /* RequestToken.swift in Sources */,
+				34ADBF0F2A2DE55800388C49 /* TranslateRequestDataDTO.swift in Sources */,
+				34ADBF222A2DF71B00388C49 /* TranslateRequestUsecase.swift in Sources */,
+				34ADBF1B2A2DF02700388C49 /* TranslateRequestRepositortyProtocol.swift in Sources */,
 				348746E92A1CD6EA008C2E05 /* Language.swift in Sources */,
 				343E09DF2A1B7CCC009D210B /* ResultView.swift in Sources */,
 				349D800C2A1B78EF00E9C6E1 /* TranslateView.swift in Sources */,
+				34ADBF122A2DE5D700388C49 /* TranslateResponseDataDTO.swift in Sources */,
 				349D7FF82A1B75EE00E9C6E1 /* SWIFTUI_TranslateApp.swift in Sources */,
 				34342B372A26082B001EB2C3 /* InsertViewModel.swift in Sources */,
 			);
@@ -534,6 +626,7 @@
 				DEVELOPMENT_TEAM = 6V8879W55Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SWIFTUI-Translate-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -544,7 +637,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "yslee.SWIFTUI-Translate";
+				PRODUCT_BUNDLE_IDENTIFIER = yslee.swiftui.translate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -563,6 +656,7 @@
 				DEVELOPMENT_TEAM = 6V8879W55Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SWIFTUI-Translate-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -573,7 +667,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "yslee.SWIFTUI-Translate";
+				PRODUCT_BUNDLE_IDENTIFIER = yslee.swiftui.translate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
