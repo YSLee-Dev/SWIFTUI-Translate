@@ -14,20 +14,22 @@ class TranslasteViewModel : ObservableObject{
     let resultViewModel = ResultViewModel()
     
     let bookmarkSaveUsecase : BookmarkSaveUsecaseProtocol
+    let translateUsecase : TranslateRequestUsecaseProtocol
     
     var bag = Set<AnyCancellable>()
     
     init(
-        usecase : BookmarkSaveUsecase = .init()
+        usecase : BookmarkSaveUsecase = .init(),
+        translateUsecase : TranslateRequestUsecase = .init()
     ){
         self.bookmarkSaveUsecase = usecase
+        self.translateUsecase = translateUsecase
     }
     
     func bind(){
         self.insertViewModel.value
             .sink{[weak self] value in
                 self?.resultViewModel.bookmarkImg = "bookmark"
-                self?.resultViewModel.resultText = value
             }
             .store(in: &bag)
         
@@ -54,8 +56,23 @@ class TranslasteViewModel : ObservableObject{
         
         let language = self.languageViewModel.sourceLanguage.combineLatest(self.languageViewModel.targetLanguage)
             .removeDuplicates {
-                    $0.0 == $1.0
+                $0.0 == $1.0
                 }
+        
+        let sourceText = self.insertViewModel.value
+            .filter{$0 != ""}
+        
+        sourceText.combineLatest(self.languageViewModel.sourceLanguage, self.languageViewModel.targetLanguage)
+            .flatMap{ [weak self] data, source, target in
+                print(data)
+                print(source.rawValue)
+                print(target.rawValue)
+                return self?.translateUsecase.targetLanguageTranslate(
+                    .init(source: source.rawValue, target: target.rawValue, text: data)
+                ) ?? Just("ERROR").eraseToAnyPublisher()
+            }
+            .handleEvents()
+            .assign(to: &self.resultViewModel.$resultText)
         
         bookmarkTap
             .combineLatest(language)
@@ -66,7 +83,6 @@ class TranslasteViewModel : ObservableObject{
                                                   translatedText: self?.resultViewModel.resultText ?? "")
             }
             .store(in: &bag)
-        
     }
 }
 

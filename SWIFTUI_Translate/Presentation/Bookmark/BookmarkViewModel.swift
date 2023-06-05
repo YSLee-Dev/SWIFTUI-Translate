@@ -15,6 +15,7 @@ class BookmarkViewModel : ObservableObject{
     
     let usecase : BookmarkReadDeleteUsecaseProtocol
     
+    
     init(
         usecase : BookmarkReadDeleteUsecase = .init()
     ){
