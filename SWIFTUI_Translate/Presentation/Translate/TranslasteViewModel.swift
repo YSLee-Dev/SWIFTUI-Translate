@@ -56,7 +56,7 @@ class TranslasteViewModel : ObservableObject{
         
         let language = self.languageViewModel.sourceLanguage.combineLatest(self.languageViewModel.targetLanguage)
             .removeDuplicates {
-                $0.0 == $1.0
+                $0.0 == $1.0 && $0.1 == $1.1
                 }
         
         let sourceText = self.insertViewModel.value
