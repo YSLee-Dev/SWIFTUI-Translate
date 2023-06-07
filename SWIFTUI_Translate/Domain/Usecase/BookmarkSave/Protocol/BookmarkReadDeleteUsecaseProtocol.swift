@@ -8,6 +8,6 @@
 import Foundation
 
 protocol BookmarkReadDeleteUsecaseProtocol{
-    func removeList(id : String)
+    func removeList(indexSet : IndexSet)
     func listLoad() -> [BookmarkData]
 }

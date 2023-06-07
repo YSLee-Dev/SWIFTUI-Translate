@@ -12,18 +12,8 @@ class BookmarkReadDeleteRepository : BookmarkReadDeleteRepositoryProtocol{
         UserDefaults.standard.bookMarkList
     }
     
-    func bookmarkListDelete(id: String) {
-        var row = -1
-        
-        for x in UserDefaults.standard.bookMarkList.enumerated(){
-            if x.element.id == id{
-                row = x.offset
-                break
-            }
-        }
-        
-        guard row != -1 else {return}
-        UserDefaults.standard.bookMarkList.remove(at: row)
+    func bookmarkListDelete(indexSet : IndexSet) {
+        UserDefaults.standard.bookMarkList.remove(atOffsets: indexSet)
     }
 }
 

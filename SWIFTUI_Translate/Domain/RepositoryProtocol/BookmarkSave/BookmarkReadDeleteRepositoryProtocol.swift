@@ -9,5 +9,5 @@ import Foundation
 
 protocol BookmarkReadDeleteRepositoryProtocol{
     func bookmarkListLoad() -> [BookmarkData]
-    func bookmarkListDelete(id : String)
+    func bookmarkListDelete(indexSet : IndexSet)
 }

@@ -14,8 +14,8 @@ class BookmarkReadDeleteUsecase : BookmarkReadDeleteUsecaseProtocol{
         self.repositroty = repositroty
     }
     
-    func removeList(id : String){
-        self.repositroty.bookmarkListDelete(id: id)
+    func removeList(indexSet : IndexSet){
+        self.repositroty.bookmarkListDelete(indexSet: indexSet)
     }
     
     func listLoad() -> [BookmarkData]{
