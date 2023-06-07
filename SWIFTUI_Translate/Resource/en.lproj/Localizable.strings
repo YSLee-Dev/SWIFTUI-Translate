@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  SWIFTUI_Translate
+
+  Created by 이윤수 on 2023/06/07.
+  
+*/
+
+// TABBAR, NAVIGATION TITLE
+"Translate" = "Translate";
+"Bookmark" = "Bookmark";
+
+// ALERT LANGUAGE
+"Korean" = "Korean";
+"English" = "English";
+"Japanese" = "Japanese";
+"Chinese" = "Chinese";
+"Cancel" = "Cancel";
+
+// TRANSLATE
+"TranslatePlaceHolder" = "Enter the phrase you want to translate.";
+"Done" = "Done";

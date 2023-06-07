@@ -16,13 +16,13 @@ struct ContentView: View {
             TranslateView(viewModel: translateViewModel)
                 .tabItem{
                     Image(systemName: "mic")
-                    Text("번역")
+                    Text(NSLocalizedString("Translate", comment: "번역"))
                 }
             
             BookmarkView(viewModel: bookmarkViewModel)
                 .tabItem{
                     Image(systemName: "star")
-                    Text("즐겨찾기")
+                    Text(NSLocalizedString("Bookmark", comment: "즐겨찾기"))
                 }
         }
         .accentColor(Color.pink)

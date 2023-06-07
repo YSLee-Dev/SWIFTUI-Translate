@@ -36,7 +36,9 @@ struct LanguageView: View {
                         self.viewModel.sourceLanguage.send(la)
                     }
                 }
-
+                Button(NSLocalizedString("Cancel", comment: "취소"), role: .cancel){
+                    self.sourceAlertShow = false
+                }
             }
             
             Button {
@@ -55,6 +57,9 @@ struct LanguageView: View {
                         self.targetLanguage = la
                         self.viewModel.targetLanguage.send(la)
                     }
+                }
+                Button(NSLocalizedString("Cancel", comment: "취소"), role: .cancel){
+                    self.targetAlertShow = false
                 }
 
             }

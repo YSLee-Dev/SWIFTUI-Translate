@@ -10,14 +10,17 @@ import Combine
 
 struct InsertView: View {
     @State private var tfValue : String = ""
+    @FocusState private var focus : Bool
+    
     let viewModel : InsertViewModel
     
     var body: some View {
         VStack(alignment: .trailing){
             Button {
                 self.viewModel.value.send(self.tfValue)
+                self.focus = false
             } label: {
-                Text("확인")
+                Text(NSLocalizedString("Done", comment: "완료"))
                     .font(.callout)
                     .foregroundColor(.pink)
                     .padding(20)
@@ -27,13 +30,14 @@ struct InsertView: View {
                 .font(.title2)
                 .fontWeight(.semibold)
                 .lineLimit(0)
+                .focused($focus)
                 .frame(maxWidth: .infinity,
                        alignment: .leading)
                 .padding(EdgeInsets(top: 0, leading: 20, bottom: 20, trailing: 20))
                 .overlay{
                     if self.tfValue == ""{
                         VStack{
-                            Text("번역하고 싶은 문구를 입력하세요.")
+                            Text(NSLocalizedString("TranslatePlaceHolder", comment: "입력하고 싶은 문구를 입력하세요."))
                                 .font(.title2)
                                 .fontWeight(.semibold)
                                 .foregroundColor(.gray)
