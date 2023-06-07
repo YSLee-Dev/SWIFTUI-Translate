@@ -12,16 +12,25 @@ struct BookmarkView : View{
     
     var body: some View{
         NavigationView {
-            List(self.viewModel.bookmarkList, id: \.id){
-                BookmarkCell(data: $0)
-                    .padding(10)
-                    .listRowInsets(EdgeInsets())
-                    .listRowSeparator(.hidden)
-                    .background(Color(uiColor: .secondarySystemBackground))
+            List{
+                ForEach(self.viewModel.bookmarkList, id: \.id){
+                    BookmarkCell(data: $0)
+                        .padding(10)
+                        .listRowInsets(EdgeInsets())
+                        .listRowSeparator(.hidden)
+                        .background(Color(uiColor: .secondarySystemBackground))
+                }
+                .onDelete{ indexSet in
+                    self.viewModel.removeIndexSet.send(indexSet)
+                }
             }
+            
             .listStyle(.plain)
             .background(Color(uiColor: .secondarySystemBackground))
             .navigationTitle("즐겨찾기")
+            .toolbar{
+                EditButton()
+            }
         }
     }
 }
