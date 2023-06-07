@@ -28,9 +28,6 @@ struct BookmarkView : View{
             .listStyle(.plain)
             .background(Color(uiColor: .secondarySystemBackground))
             .navigationTitle(NSLocalizedString("Bookmark", comment: "즐겨찾기"))
-            .toolbar{
-                EditButton()
-            }
         }
     }
 }
